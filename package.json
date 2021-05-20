@@ -1,0 +1,40 @@
+{
+    "name": "rolling-news-backend",
+    "version": "1.0.0",
+    "description": "Backend Rolling News - Proyecto final del curso de programación full stack de rolling code school en el que debemos realizar un crud para un portal de noticias.",
+    "main": "index.js",
+    "scripts": {
+        "start": "babel-node src/index.js",
+        "dev": "nodemon --exec babel-node src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Alejo-Martinez-Grau/Rolling-news-backend.git"
+    },
+    "keywords": [
+        "RollingNews",
+        "Rolling",
+        "code",
+        "school",
+        "crud",
+        "portal",
+        "de",
+        "noticias",
+        "react",
+        "mongoDB"
+    ],
+    "author": "Alejo Martinez Grau, Lourdes Murua, Carla Antonela Padula, Agustin Agudo, David Matias Drube",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Alejo-Martinez-Grau/Rolling-news-backend/issues"
+    },
+    "homepage": "https://github.com/Alejo-Martinez-Grau/Rolling-news-backend#readme",
+    "dependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}
