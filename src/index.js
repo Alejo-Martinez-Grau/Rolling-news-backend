@@ -3,6 +3,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import path from 'path';
 import './database';
+import noticiasRoutes from './routes/noticias.routes'
 
 //setup
 //instancia de express
@@ -24,6 +25,4 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.static(path.join(__dirname, '../public')));
 
 //rutas
-app.get('/', (req, res) => {
-    res.send('Hola desde el servidor');
-});
+app.use('/api/rollingnews', noticiasRoutes);
