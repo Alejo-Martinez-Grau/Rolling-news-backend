@@ -5,6 +5,7 @@ import path from 'path';
 import './database';
 import noticiasRoutes from './routes/noticias.routes'
 
+
 //setup
 //instancia de express
 const app = express();
