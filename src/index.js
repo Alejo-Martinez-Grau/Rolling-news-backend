@@ -3,6 +3,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import path from 'path';
 import './database';
+import adminRoutes from './routes/admin.routes'
 import noticiasRoutes from './routes/noticias.routes'
 
 
@@ -27,3 +28,4 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 //rutas
 app.use('/api/rollingnews', noticiasRoutes);
+app.use('/api/rollingnews', adminRoutes);
