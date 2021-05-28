@@ -5,7 +5,7 @@ import path from 'path';
 import './database';
 import adminRoutes from './routes/admin.routes'
 import noticiasRoutes from './routes/noticias.routes'
-
+import categoriasRoutes from './routes/categorias.routes'
 
 //setup
 //instancia de express
@@ -29,3 +29,4 @@ app.use(express.static(path.join(__dirname, '../public')));
 //rutas
 app.use('/api/rollingnews', noticiasRoutes);
 app.use('/api/rollingnews', adminRoutes);
+app.use('/api/rollingnews', categoriasRoutes);
