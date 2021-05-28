@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
 const url = 'mongodb://localhost:27017/rollingnews'
+//const url = 'mongodb+srv://Alejomartinezgrau:Tumama12)(@cluster0.teoz2.mongodb.net/rollingNews'
 
 mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
 
