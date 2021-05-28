@@ -3,7 +3,7 @@ import Categoria from '../models/categoria';
 const categoriasCtrl = {};
 
 categoriasCtrl.getPrueba = (req, res) => {
-res.send('hola desde el servidor')
+res.send('hola desde el servidor y controller de categorias')
 };
 
 categoriasCtrl.categoriaNueva = async (req,res) =>{

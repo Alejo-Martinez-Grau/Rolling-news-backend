@@ -4,7 +4,7 @@ const noticiaCtrl = {};
 
 noticiaCtrl.getPrueba = (req, res) => {
 
-    res.send('Hola desde el servidor');
+    res.send('Hola desde el servidor y controller de noticias');
 };
 
 noticiaCtrl.noticiaNueva = async (req, res) => {
@@ -77,7 +77,7 @@ noticiaCtrl.eliminarNoticia = async (req, res) => {
 
 noticiaCtrl.editarNoticia = async (req, res) => {
     try{
-        await Noticia.findByIdAndUpdate(req.params.id, req.body);
+        await Noticia.findByIdAndUpdate(req.params._id, req.body);
         res.status(200).json({
             mensaje: "los datos de la noticia fueron modificados"
         });

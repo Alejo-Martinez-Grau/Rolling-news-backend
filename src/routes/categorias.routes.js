@@ -10,7 +10,7 @@ router
   .post(categoriasCtrl.categoriaNueva);
 
 router
-  .route("/:_id")
+  .route("/categorias/:_id")
   .delete(categoriasCtrl.eliminarCategoria)
   .put(categoriasCtrl.editarCategoria)
   .get(categoriasCtrl.obtenerCategoria);

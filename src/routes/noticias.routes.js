@@ -5,10 +5,10 @@ import noticiaCtrl from "../controllers/noticia.controllers";
 const router = Router();
 
 //rutas
-router.route("/").get(noticiaCtrl.getPrueba).post(noticiaCtrl.noticiaNueva);
+router.route("/noticias").get(noticiaCtrl.getPrueba).post(noticiaCtrl.noticiaNueva);
 
 router
-  .route("/:_id")
+  .route("/noticias/:_id")
   .get(noticiaCtrl.obtenerNoticia)
   .put(noticiaCtrl.editarNoticia)
   .delete(noticiaCtrl.eliminarNoticia);
