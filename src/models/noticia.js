@@ -63,6 +63,6 @@ const noticiaSchema = new Schema({
 }
 );
 
-const Noticia = mongoose.model('noticia', noticiaSchema);
+const Noticia = mongoose.model('news', noticiaSchema);
 
 export default Noticia;
