@@ -6,7 +6,7 @@ const router = Router();
 //rutas de las categorias
 router
   .route("/categorias")
-  .get(categoriasCtrl.getPrueba)
+  .get(categoriasCtrl.listarCategorias)
   .post(categoriasCtrl.categoriaNueva);
 
 router
