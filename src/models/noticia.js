@@ -60,8 +60,7 @@ const noticiaSchema = new Schema({
     destacada: {
         type: Boolean
     }
-}
-);
+});
 
 const Noticia = mongoose.model('news', noticiaSchema);
 

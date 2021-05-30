@@ -37,23 +37,23 @@ noticiaCtrl.noticiaNueva = async (req, res) => {
         });
 
     }
+};
 
-    noticiaCtrl.listarNoticias = async (req,res) => {
-        try{//obtenerarreglocon todas las noticias
-
+noticiaCtrl.listarNoticias = async (req, res) => {
+        try{
             const arregloNoticia = await Noticia.find();
 
             res.status(200).json(arregloNoticia);
 
         }catch(error){
-            console.log(error);
+            console.log(error)
             res.status(500).json({
                 mensaje: "ocurrio un error al intentar listar las noticias"
             });
 
         };
-    };
 };
+
 
 noticiaCtrl.eliminarNoticia = async (req, res) => {
     try{

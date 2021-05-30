@@ -1,11 +1,12 @@
 import { Router } from "express";
 import noticiaCtrl from "../controllers/noticia.controllers";
 
-
 const router = Router();
 
-//rutas
-router.route("/noticias").get(noticiaCtrl.listarNoticias).post(noticiaCtrl.noticiaNueva);
+router
+  .route("/noticias")
+  .get(noticiaCtrl.listarNoticias)
+  .post(noticiaCtrl.noticiaNueva);
 
 router
   .route("/noticias/:_id")
