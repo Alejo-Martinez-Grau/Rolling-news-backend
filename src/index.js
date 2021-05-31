@@ -3,7 +3,8 @@ import morgan from 'morgan';
 import cors from 'cors';
 import path from 'path';
 import './database';
-import adminRoutes from './routes/admin.routes'
+//import adminRoutes from './routes/admin.routes'
+import adminRoutes from './routes/adminUser.routes'
 import noticiasRoutes from './routes/noticias.routes'
 import categoriasRoutes from './routes/categorias.routes'
 
