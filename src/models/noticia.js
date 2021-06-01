@@ -35,7 +35,7 @@ const noticiaSchema = new Schema({
     category: {
         type:String,
         required: true,
-        maxLength: 50
+        maxLength: 150
     },
     //foto obligatoria
     img: {
