@@ -14,9 +14,9 @@ const noticiaSchema = new Schema({
         },
     // No se si usar los Date de moongose o string
     date:{
-        type: String,
+        type: Date,
         required: true,
-        maxLength:11,
+        maxLength:150,
 
     },
     preview: {
